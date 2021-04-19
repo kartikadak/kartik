@@ -20,4 +20,5 @@
 
 * [Information Gathering](network-security/information-gathering.md)
 * [Information Gathering\(Infrastructure\)](network-security/information-gathering-1.md)
+* [Firewall / IDS evasion](network-security/firewall-ids-evasion.md)
 
