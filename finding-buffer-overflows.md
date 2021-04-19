@@ -2,7 +2,7 @@
 
 Before studying how to exploit buffer overflows and execute payloads, it is important to know how to find them. Any application that uses unsafe operations, such as those below \(there are many others\), might be vulnerable to buffer overflows.
 
-![](.gitbook/assets/image%20%2871%29.png)
+![](.gitbook/assets/image%20%2872%29.png)
 
 Any function which carries out the following operations may be vulnerable to buffer overflows: 
 
@@ -40,17 +40,17 @@ Finding buffer overflows in binary programs
 
 Example : cookie.c
 
-![](.gitbook/assets/image%20%2852%29.png)
+![](.gitbook/assets/image%20%2853%29.png)
 
 First, we will go through the process of understanding the code, and then we will exploit it.
 
 ASM
 
-![](.gitbook/assets/image%20%2875%29.png)
+![](.gitbook/assets/image%20%2876%29.png)
 
-![](.gitbook/assets/image%20%2850%29.png)
+![](.gitbook/assets/image%20%2851%29.png)
 
-![](.gitbook/assets/image%20%2844%29.png)
+![](.gitbook/assets/image%20%2845%29.png)
 
 In this sample, the message you win! is never printed on screen because the cookie variable is set to 0 and never changes.
 
@@ -62,7 +62,7 @@ However, since the function gets can be overflowed, we will demonstrate that we 
 
 Stack Frame of cookie
 
-![](.gitbook/assets/image%20%2847%29.png)
+![](.gitbook/assets/image%20%2848%29.png)
 
 **Also, note that since ESP points to the top of the stack, things such as local variables and function arguments can also be accessed using the \[ESP + x\] combination. As you already know, the square brackets are an assembly language notation used to indicate that we are pointing to the memory. This means we are pointing to data stored at memory location \[EBP + x\] and not the value EBP + X.**
 

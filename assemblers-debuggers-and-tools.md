@@ -13,7 +13,7 @@ When a source code file is assembled, the resulting file is called an object fil
 
 Once the assembler has created the object file, a linker is needed in order to create the actual executable file. What a linker does is take one or more object files and combine them to create the executable file. An example of these object files are the kernel32.dll and user32.dll which are required to create a windows executable that accesses certain libraries.
 
-![](.gitbook/assets/image%20%2855%29.png)
+![](.gitbook/assets/image%20%2856%29.png)
 
 Compiler
 
@@ -21,31 +21,31 @@ The complier is similar to the assembler. It converts high-level source code \(s
 
 ASM Basics
 
-![](.gitbook/assets/image%20%2860%29.png)
+![](.gitbook/assets/image%20%2861%29.png)
 
-![](.gitbook/assets/image%20%2836%29.png)
+![](.gitbook/assets/image%20%2837%29.png)
 
 Depending on the architectural syntax, instructions and rules may vary. For example, the source and the destination operands may be in different position.
 
-![](.gitbook/assets/image%20%2812%29.png)
+![](.gitbook/assets/image%20%2813%29.png)
 
 As you can see, AT&T puts a percent sign \(%\) before registers names and a dollar sign \($\) before numbers. Another thing to notice is that AT&T adds a suffix to the instruction, which defines the operand size: Q \(quad – 64 bits\), L \(long – 32 bits\), W \(word -16 bits\), B \(byte – 8 bits\).
 
 PUSH Instruction
 
-![](.gitbook/assets/image%20%285%29.png)
+![](.gitbook/assets/image%20%286%29.png)
 
 POP Instruction
 
-![](.gitbook/assets/image%20%2843%29.png)
+![](.gitbook/assets/image%20%2844%29.png)
 
 Call Instruction
 
-![](.gitbook/assets/image%20%286%29.png)
+![](.gitbook/assets/image%20%287%29.png)
 
 Debugger
 
-![](.gitbook/assets/image%20%2834%29.png)
+![](.gitbook/assets/image%20%2835%29.png)
 
 * In the first column is the address location 
 * In the second column is the machine code 

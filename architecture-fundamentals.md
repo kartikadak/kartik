@@ -22,7 +22,7 @@ Each CPU has its fixed set of registers that are accessed when required. You can
 
 * General Purpose registers \(x86 architecture\)
 
-![](.gitbook/assets/image%20%2821%29.png)
+![](.gitbook/assets/image%20%2822%29.png)
 
 The 16-bit naming convention combines the L and the H, and replaces it with an X. While for Stack Pointer, Base Pointer, Source and Destination registers it simply removes the L.
 
@@ -30,7 +30,7 @@ In the 32-bit representation, the register acronym is prefixed with an E, meanin
 
 Naming conventions for every bit
 
-![](.gitbook/assets/image%20%2867%29.png)
+![](.gitbook/assets/image%20%2868%29.png)
 
 EIP
 
