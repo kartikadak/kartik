@@ -19,5 +19,5 @@
 ## Network Security
 
 * [Information Gathering](network-security/information-gathering.md)
-* [Information Gathering](network-security/information-gathering-1.md)
+* [Information Gathering\(Infrastructure\)](network-security/information-gathering-1.md)
 

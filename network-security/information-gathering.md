@@ -24,7 +24,7 @@ Active information gathering techniques interact directly with the target system
 
 **Search engines**
 
-![](../.gitbook/assets/image%20%2887%29.png)
+![](../.gitbook/assets/image%20%2888%29.png)
 
 Web Presence
 
@@ -57,13 +57,13 @@ For more details
 
 You can also change search engines to get more information.
 
-![](../.gitbook/assets/image%20%2886%29.png)
+![](../.gitbook/assets/image%20%2887%29.png)
 
 **Partners and third parties**
 
 Other useful information that you can gather about the company are mergers and acquisitions, partnerships, third parties... With these you can deduce what type of technologies and systems they use internally. You can take advantage of this information in later phases of the pen test. You can also use it to perform a more effective social engineering attack with a higher chance of success.
 
-![](../.gitbook/assets/image%20%2888%29.png)
+![](../.gitbook/assets/image%20%2889%29.png)
 
 From these web pages, you can gather information such as the technology stack the organization uses \(hardware and software\), tools, systems and so on
 
@@ -109,9 +109,9 @@ In this particular phase, social media is useful in the following ways: • Lear
 
 Why is building a network of people important? Social engineering \(among the other things\) is the art of exploiting trust relationships. If your target is Bob and you know that Bob trusts Adam therefore, you can get to Bob through Adam. Figuring out this trust relationship is an important part of the information gathering process.
 
-![](../.gitbook/assets/image%20%2889%29.png)
-
 ![](../.gitbook/assets/image%20%2890%29.png)
+
+![](../.gitbook/assets/image%20%2891%29.png)
 
 
 
