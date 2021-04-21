@@ -18,7 +18,7 @@ Name service
 
 The name service has the same purpose of a DNS record, it translates and maps a NetBIOS name to an IP address. A name is an unique 16-byte address that identifies a NetBIOS resource on the network and is dynamically registered when either services or applications start. Names can be registered as unique names or as group names.
 
-![](../.gitbook/assets/image%20%28111%29.png)
+![](../.gitbook/assets/image%20%28114%29.png)
 
 Datagram service
 
@@ -33,15 +33,41 @@ The following steps are used to establish the connection:
 
 Example to enumerate NetBIOS
 
-![](../.gitbook/assets/image%20%28110%29.png)
+![](../.gitbook/assets/image%20%28113%29.png)
 
 ![](../.gitbook/assets/image%20%28107%29.png)
 
-![](../.gitbook/assets/image%20%28112%29.png)
+![](../.gitbook/assets/image%20%28116%29.png)
+
+![](../.gitbook/assets/image%20%28110%29.png)
+
+We can then enumerate shares using smbclient or net use \(windows\)
 
 ![](../.gitbook/assets/image%20%28109%29.png)
 
-We can then enumerate shares using smbclient or net use \(windows\)
+SNMP enumeration
+
+In the SNMP protocol there is a manager and a number of agents. The agents either wait for the commands from the manager or send critical messages \(trap\) to the manager. The manager is usually a system administrator
+
+There are four types of SNMP commands used to control and monitor managed devices: 1. Read 2. Write 3. Trap 4.Traversal Operations
+
+The read command is used to monitor devices, while the write command is used to configure devices and change device settings. The trap command is used to "trap" events from the device and report them back to the monitoring system. Traversal operations are used to determine what variables a certain device supports
+
+MIB
+
+MIBs \(Management Information Base\) are a collection of definitions which define the properties of the managed object on the device \(such as a router, switch, etc.\). In other words, it is a database of information that is relevant to the network manager.
+
+In order to keep items well organized, the database is structured as a tree thus, each object of this tree has a number and a name. The complete path, from the top of the tree down to the point of interest, forms the name of that point called an OID \(Object Identifier\). Nodes near the top of the tree are extremely general in nature.
+
+![](../.gitbook/assets/image%20%28112%29.png)
+
+![](../.gitbook/assets/image%20%28111%29.png)
+
+Snmpwalk \(part of the Net-SNMP suite\) uses SNMP GETNEXT requests to query a network entity for a tree of information. Since an object identifier \(OID\) may be given on the command line, knowing the OID of the target device may be very useful.
+
+![](../.gitbook/assets/image%20%28115%29.png)
+
+
 
 
 
