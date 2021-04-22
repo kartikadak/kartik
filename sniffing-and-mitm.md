@@ -38,3 +38,14 @@ If the entry is not found, an ARP request is sent on the LAN. The request contai
 
 ![](.gitbook/assets/image%20%28118%29.png)
 
+The 48 bit MAC address used as the destination is the Layer 2 broadcast address: the ARP Request reaches all the nodes in the broadcast domain. The nodes whose IP address does not match with the destination IP\_B will just drop the packet.
+
+The node whose IP address matches IP\_B, will respond with an ARP Reply to the sender. This is the information that the reply will contain: • Destination MAC : MAC\_A • Destination IP address: IP\_A • Source IP address: IP\_B • Source MAC: MAC\_B
+
+The following list summarizes when ARP is used: 
+
+* A host desires to send a packet to another host in the same network 
+* A host desires to reach another host beyond his local network and needs the gateway hardware address 
+* A router needs to forward a packet for one host through another router 
+* A router needs to forward a packet to the destination host on the same network
+
