@@ -1,6 +1,6 @@
 # Sniffing and MITM
 
-![](.gitbook/assets/image%20%28117%29.png)
+![](.gitbook/assets/image%20%28120%29.png)
 
 Passive Sniffing
 
@@ -20,5 +20,21 @@ ARP poisoning
 
 ARP poisoning \(a.k.a. ARP spoofing\) is probably the most stealthy among the Active sniffing techniques. It does not need to bring down switch functionalities, instead it exploits the concept of traffic redirection. This is one of the most used attacks to perform a Man in the Middle.
 
-By exploiting the network via ARP poisoning, the attacker is able to redirect the traffic of the selected victims to a specific machine \(usually the attackers machine\). Doing this will enable the attacker to not only monitor, but also modify the traffic
+By exploiting the network via ARP poisoning, the attacker is able to redirect the traffic of the selected victims to a specific machine \(usually the attackers machine\). Doing this will enable the attacker to not only monitor, but also modify the traffic.
+
+Working of ARP
+
+ARP stands for Address Resolution Protocol and it is available and supported by all NIC's and Operating systems. ARP has been developed to be a quick way to match Layer 3 network addresses \(IP address\) with Layer 2 addresses \(MAC addresses\).
+
+![](.gitbook/assets/image%20%28121%29.png)
+
+![](.gitbook/assets/image%20%28119%29.png)
+
+The following example will shed some light on ARP tables: when host A creates a packet destined to host B, before it is delivered to its destination \(B\), A searches into its ARP table. If the B's Layer 3 address is found in the table \(meaning the IP\_B\), the correspondent MAC address \(MAC\_B\) is inserted as the Layer 2 destination address into the protocol frame
+
+![](.gitbook/assets/image%20%28117%29.png)
+
+If the entry is not found, an ARP request is sent on the LAN. The request contains the following values in the destination fields of the IP-Ethernet packets: • Source IP Address: IP\_A • Source IP Address: MAC\_A • Destination IP Address: IP\_B • Destination MAC: FF:FF:FF:FF:FF:FF
+
+![](.gitbook/assets/image%20%28118%29.png)
 
