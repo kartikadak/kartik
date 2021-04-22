@@ -1,6 +1,6 @@
 # Sniffing and MITM
 
-![](.gitbook/assets/image%20%28121%29.png)
+![](.gitbook/assets/image%20%28122%29.png)
 
 Passive Sniffing
 
@@ -26,7 +26,7 @@ Working of ARP
 
 ARP stands for Address Resolution Protocol and it is available and supported by all NIC's and Operating systems. ARP has been developed to be a quick way to match Layer 3 network addresses \(IP address\) with Layer 2 addresses \(MAC addresses\).
 
-![](.gitbook/assets/image%20%28122%29.png)
+![](.gitbook/assets/image%20%28123%29.png)
 
 ![](.gitbook/assets/image%20%28120%29.png)
 
@@ -57,11 +57,13 @@ Gratuitous ARP reply: it is an ARP reply that has been sent without being reques
 
 ![](.gitbook/assets/image%20%28119%29.png)
 
-![](.gitbook/assets/image%20%28123%29.png)
-
 ![](.gitbook/assets/image%20%28124%29.png)
 
+![](.gitbook/assets/image%20%28126%29.png)
 
+![](.gitbook/assets/image%20%28121%29.png)
+
+![](.gitbook/assets/image%20%28125%29.png)
 
 
 
