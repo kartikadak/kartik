@@ -59,7 +59,7 @@ Gratuitous ARP reply: it is an ARP reply that has been sent without being reques
 
 ![](.gitbook/assets/image%20%28126%29.png)
 
-![](.gitbook/assets/image%20%28128%29.png)
+![](.gitbook/assets/image%20%28129%29.png)
 
 ![](.gitbook/assets/image%20%28122%29.png)
 
@@ -75,5 +75,13 @@ A host trying to enter the network asks for an IP. It will pick the best offer a
 
 As you already know, DHCP Servers not only offer IP addresses but they can also provide a default gateway for the network. By competing with legit DHCP servers \(and winning by increasing the lease time\), we can set ourselves as the default gateway. In this way all the traffic leaving the network from the client host will reach our machine \(attacker\) and then the real gateway
 
+![](.gitbook/assets/image%20%28128%29.png)
 
+The MitM \(attacker\) should: 
+
+1. Intercept Alice's query and forward it to the Keys server 
+2. Intercept Bob's public key and store it for further use 
+3. Send his own Public key to Alice instead of Bob's public key 
+4. Alice would encrypt data using M's Public key thinking that she is using Bob's key
+5. MITM would intercept Alice's encrypted messages, decrypting them with his private key and then forward them to Bob using Bob's public key saved at step two
 
