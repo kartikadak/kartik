@@ -1,6 +1,6 @@
 # Sniffing and MITM
 
-![](.gitbook/assets/image%20%28122%29.png)
+![](.gitbook/assets/image%20%28123%29.png)
 
 Passive Sniffing
 
@@ -26,7 +26,7 @@ Working of ARP
 
 ARP stands for Address Resolution Protocol and it is available and supported by all NIC's and Operating systems. ARP has been developed to be a quick way to match Layer 3 network addresses \(IP address\) with Layer 2 addresses \(MAC addresses\).
 
-![](.gitbook/assets/image%20%28123%29.png)
+![](.gitbook/assets/image%20%28125%29.png)
 
 ![](.gitbook/assets/image%20%28120%29.png)
 
@@ -57,13 +57,23 @@ Gratuitous ARP reply: it is an ARP reply that has been sent without being reques
 
 ![](.gitbook/assets/image%20%28119%29.png)
 
-![](.gitbook/assets/image%20%28124%29.png)
-
 ![](.gitbook/assets/image%20%28126%29.png)
 
-![](.gitbook/assets/image%20%28121%29.png)
+![](.gitbook/assets/image%20%28128%29.png)
 
-![](.gitbook/assets/image%20%28125%29.png)
+![](.gitbook/assets/image%20%28122%29.png)
+
+![](.gitbook/assets/image%20%28127%29.png)
+
+DHCP poisoning
+
+DHCP is a service usually running on routers to dynamically assign or revoke IP address to new hosts on the network. The protocol is based on the UDP protocol and consists of an exchange of messages that are mostly sent in broadcast and are visible to the entire broadcast domain.
+
+A host trying to enter the network asks for an IP. It will pick the best offer and use that IP address from that point on. It is important to know that if the whole communication succeeded, the DHCP server will also set the client default gateway. Due to its implementation, an attacker can spoof the DHCP messages in order to mount a Man in the Middle attack.
+
+![](.gitbook/assets/image%20%28124%29.png)
+
+As you already know, DHCP Servers not only offer IP addresses but they can also provide a default gateway for the network. By competing with legit DHCP servers \(and winning by increasing the lease time\), we can set ourselves as the default gateway. In this way all the traffic leaving the network from the client host will reach our machine \(attacker\) and then the real gateway
 
 
 
