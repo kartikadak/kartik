@@ -49,3 +49,11 @@ The following list summarizes when ARP is used:
 * A router needs to forward a packet for one host through another router 
 * A router needs to forward a packet to the destination host on the same network
 
+Gratuitous ARP
+
+Gratuitous ARP request: it is a request packet where source and destination IP are set with the IP of the machine that is issuing the packet and the destination MAC is the broadcast address
+
+Gratuitous ARP reply: it is an ARP reply that has been sent without being requested
+
+
+
