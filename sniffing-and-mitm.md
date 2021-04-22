@@ -85,3 +85,5 @@ The MitM \(attacker\) should:
 4. Alice would encrypt data using M's Public key thinking that she is using Bob's key
 5. MITM would intercept Alice's encrypted messages, decrypting them with his private key and then forward them to Bob using Bob's public key saved at step two
 
+LLMNR and NBT-NS spoofing
+
